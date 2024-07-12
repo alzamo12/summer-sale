@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Sale</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital@0;1&display=swap" rel="stylesheet">
+<style>
+   .work-sans{
+    font-family: "Work Sans", sans-serif;
+   }
+</style>
+</head>
+<body>
+    <header class="w-full bg-[#F9F6E2] py-12">
+        <div class="flex items-center justify-center space-x-12">
+            <div class="space-y-12 text-center">
+                <h4 class="uppercase text-3xl">---sale fever---</h4>
+                <h1 class="text-6xl work-sans font-bold ">Purchase TK 200 or <br>
+                    above & get <span class=" text-[#E527B2]">20% off</span>
+                </h1>
+                <p class="text-[#111111] text-2xl  font-medium">Use Promo Code  &nbsp;  <button class="btn btn-active btn-secondary font-semibold text-2xl">SELL200</button></p>
+            </div>
+            <div class="">
+                <img src="images/Summer 1.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main class="">
+       <!-- container  -->
+        <section class=" pl-96 bg-[#f6f5f5] py-32 grid grid-cols-2">
+          
+             <!-- kitchenware section  -->
+       <div>
+        <div  class=" space-y-8 ">
+        <h1 class="text-3xl font-bold">kitchenware</h1>
+          <div class="flex space-x-12">
+              <!-- image 1 -->
+          <div id="prod1" class="bg-white py-6 w-[350px]  h-auto space-y-6 text-center grid items-center justify-center">
+              <div class="w-[300px] h-[200px] bg-[#eae9e9] grid items-center justify-center">
+                  <img src="images/prod1.png" alt="">
+              </div>
+              <!-- description -->
+              <div class="space-y-2">
+                  <!-- rating -->
+                  <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        checked="checked" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <h2 id="prod1-name" class="text-2xl font-semibold text-[#111111]">K. Accessories</h2>
+                    <h4 id="prod1-price">39.00 TK</h4>
+              </div>
+            </div>
+          <!-- image 2 -->
+          <div id="prod2" class="bg-white py-6 w-[350px]  h-auto space-y-6 text-center grid items-center justify-center">
+              <div class="w-[300px] h-[200px] bg-[#eae9e9] grid items-center justify-center">
+                  <img src="images/prod2.png" alt="">
+              </div>
+              <!-- description -->
+              <div class="space-y-2">
+                  <!-- rating -->
+                  <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        checked="checked" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <h2 id="prod2-name" class="text-2xl font-semibold text-[#111111]">K. BreadMaker</h2>
+                    <h4>25.00 TK</h4>
+              </div>
+          </div>
+          <!-- image 3 -->
+          <div id="prod3" class="bg-white py-6 w-[350px]  h-auto space-y-6 text-center grid items-center justify-center">
+              <div class="w-[300px] h-[200px] bg-[#eae9e9] grid items-center justify-center">
+                  <img src="images/prod3.png" alt="">
+              </div>
+              <!-- description -->
+              <div class="space-y-2">
+                  <!-- rating -->
+                  <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        checked="checked" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <h2 id="prod3-name" class="text-2xl font-semibold text-[#111111]">Home Cooker</h2>
+                    <h4>40.00 TK</h4>
+              </div>
+          </div>
+          </div>
+        
+      </div>
+    </div>
+    <!-- coupon -->
+        <div class="ml-72 mt-16 space-y-6 w-[350px]">
+            <div class="bg-white">
+                <h2>Have Coupon?</h2>
+                <input id="coupon-code" class="py-3 border border-solid border-black" type="text" placeholder="Coupon code"><button id="coupon-btn" class="py-3 rounded-l-none btn btn-secondary btn-active">Apply</button>
+                
+            </div>
+            <div class="bg-white">
+                <div id="cart-product" class="space-y-2">
+
+                </div>
+                <div class="space-y-2">
+                    <h2 id="cart-total-price">total price: <span id="total-price-span"></span></h2>
+                    <h2 id="cart-discount">discount: <span id="discount-span"></span></h2>
+                    <h2 id="cart-discount-price">total: <span id="total-span"></span></h2>
+                    <hr>
+                    <button id="make-purchase-btn" class="btn btn-active btn-secondary w-full">Make Purchase</button>
+                </div>
+            </div>
+        </div>
+        <!-- sportswear -->
+        <div class="  space-y-8 mt-8
+        ">
+        <h1 class="text-3xl font-bold">SportsWear</h1>
+          <div class="flex space-x-12">
+              <!-- image 1 -->
+          <div id="prod4" class="bg-white py-6 w-[350px]  h-auto space-y-6 text-center grid items-center justify-center">
+              <div class="w-[300px] h-[200px] bg-[#eae9e9] grid items-center justify-center">
+                  <img src="images/prod4.png" alt="">
+              </div>
+              <!-- description -->
+              <div class="space-y-2">
+                  <!-- rating -->
+                  <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        checked="checked" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <h2 id="prod4-name" class="text-2xl font-semibold text-[#111111]">Sports Back Cap</h2>
+                    <h4>49.00 TK</h4>
+              </div>
+          </div>
+          <!-- image 2 -->
+          <div id="prod5" class="bg-white py-6 w-[350px]  h-auto space-y-6 text-center grid items-center justify-center">
+              <div class="w-[300px] h-[200px] bg-[#eae9e9] grid items-center justify-center">
+                  <img src="images/prod5.png" alt="">
+              </div>
+              <!-- description -->
+              <div class="space-y-2">
+                  <!-- rating -->
+                  <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        checked="checked" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <h2 id="prod5-name" class="text-2xl font-semibold text-[#111111]">Full Jersey Set</h2>
+                    <h4>69.00 TK</h4>
+              </div>
+          </div>
+          <!-- image 3 -->
+          <div id="prod6" class="bg-white py-6 w-[350px]  h-auto space-y-6 text-center grid items-center justify-center">
+              <div class="w-[300px] h-[200px] bg-[#eae9e9] grid items-center justify-center">
+                  <img src="images/prod6.png" alt="">
+              </div>
+              <!-- description -->
+              <div class="space-y-2">
+                  <!-- rating -->
+                  <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        checked="checked" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <h2 id="prod6-name" class="text-2xl font-semibold text-[#111111]"> Sports Cates</h2>
+                    <h4>140.00 TK</h4>
+              </div>
+          </div>
+          </div>
+        
+      </div>
+        </section>
+       
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/kitchenwear.js"></script>
+    <script src="js/utilities.js"></script>
+</body>
+</html>
